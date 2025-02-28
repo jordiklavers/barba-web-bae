@@ -1,5 +1,6 @@
 import lagrangeBarbaCore from "https://cdn.skypack.dev/@lagrange/barba-core";
 import gsap from "https://cdn.skypack.dev/gsap";
+import swup from "https://cdn.skypack.dev/swup";
 
 console.log(lagrangeBarbaCore);
 
@@ -31,3 +32,15 @@ lagrangeBarbaCore.init({
     },
   ],
 });
+
+function initBasicFunctions() {
+  console.log("initBasicFunctions");
+}
+
+function resetWebflow() {
+  console.log("resetWebflow");
+  Webflow.destroy();
+  Webflow.ready();
+  Webflow.require("ix2").init();
+  webflow.init();
+}
